@@ -13,7 +13,7 @@ const ForgotPassword = () => {
     setError(null);
 
     try {
-      const response = await fetch("http://localhost:5000/api/v1/user/forgot-password", {
+      const response = await fetch("https://rrerp.onrender.com/api/v1/user/forgot-password", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email }),
