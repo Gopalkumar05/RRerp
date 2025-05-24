@@ -19,7 +19,7 @@ const ActivityForm = () => {
     }
 
     try {
-      await axios.post("http://localhost:5000/api/activities", formData, {
+      await axios.post("https://rrerp.onrender.com/api/activities", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
