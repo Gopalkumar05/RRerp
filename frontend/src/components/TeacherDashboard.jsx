@@ -7,7 +7,7 @@ import { io } from "socket.io-client";
 
 
 
-const socket = io("http://localhost:5000");
+const socket = io("https://rrerp.onrender.com");
 
 const TeacherDashboard = () => {
   const navigate = useNavigate();
@@ -66,7 +66,7 @@ useEffect(() => {
             console.log(`🔄 Fetching attendance for ${username}, Year: ${selectedYear}, Month: ${selectedMonth}`);
 
             const response = await axios.get(
-                `http://localhost:5000/getAttendance/${username}/${selectedYear}/${selectedMonth}`
+                `https://rrerp.onrender.com/getAttendance/${username}/${selectedYear}/${selectedMonth}`
             );
 
             const data = response.data;
@@ -89,7 +89,7 @@ useEffect(() => {
                 setAttendance(defaultStudents.map(student => student.attendance));
 
                 // ✅ Ensure new attendance is stored in the database
-                await axios.post("http://localhost:5000/saveAttendance", {
+                await axios.post("https://rrerp.onrender.com/saveAttendance", {
                     username,
                     collegeName: data.collegeName || "",
                     branchName: data.branchName || "",
@@ -164,7 +164,7 @@ useEffect(() => {
 
     console.log("📌 Sending Attendance Data:", JSON.stringify(attendanceData, null, 2)); // Debugging
 
-    axios.post("http://localhost:5000/saveAttendance", attendanceData)
+    axios.post("https://rrerp.onrender.com/saveAttendance", attendanceData)
         .then((res) => {
             console.log("✅ Attendance saved to DB:", res.data);
             alert("✅ Attendance saved successfully!");
