@@ -125,7 +125,7 @@ const Home = () => {
         <div className="text-center mb-10 z-10">
           <img src="/rrlogo.png" alt="RR Group Logo" className="w-24 mx-auto mb-4" />
           <h1 className="text-4xl md:text-5xl font-bold text-blue-900 mb-2 drop-shadow">
-            Welcome to Attendance Portal
+            Welcome to EduRecord
           </h1>
           <p className="text-gray-600 text-md">R.R. Group of Institutions</p>
         </div>
