@@ -21,7 +21,7 @@ const ResultPage = () => {
     if (!trimmed) return;
 
     try {
-      const response = await axios.get('http://localhost:5000/api/results/grid-fetch', {
+      const response = await axios.get('https://rrerp.onrender.com/api/results/grid-fetch', {
         params: {
           batch: selectedBatch,
           semester: selectedSemester,
