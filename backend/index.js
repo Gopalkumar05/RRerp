@@ -145,7 +145,7 @@ app.get("/getAttendance/:username/:year/:month", async (req, res) => {
               rollNo: s.rollNo,
               name: s.name,
               attendance: Array(31).fill(""),
-          })) || Array.from({ length: 65 }, (_, i) => ({
+          })) || Array.from({ length: 50 }, (_, i) => ({
               rollNo: i + 1,
               name: `Student ${i + 1}`,
               attendance: Array(31).fill(""),
