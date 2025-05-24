@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { io } from "socket.io-client";
 
-const socket = io("http://localhost:5000");
+const socket = io("https://rrerp.onrender.com");
 
 const months = [
   "January", "February", "March", "April", "May", "June",
@@ -44,7 +44,7 @@ const StudentView = () => {
       const username = storedUser.username;
 
       try {
-        const res = await fetch(`http://localhost:5000/api/students/view/${username}/${selectedYear}/${selectedMonth}`);
+        const res = await fetch(`https://rrerp.onrender.com/api/students/view/${username}/${selectedYear}/${selectedMonth}`);
         if (!res.ok) throw new Error("Failed to fetch attendance");
 
         const data = await res.json();
