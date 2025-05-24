@@ -98,7 +98,7 @@ const [messageType, setMessageType] = useState(''); // 'success' or 'error'
     
 
     try {
-      await axios.post('http://localhost:5000/api/results/grid-save', {
+      await axios.post('https://rrerp.onrender.com/api/results/grid-save', {
         batch,
         semester,
         examType,
@@ -129,7 +129,7 @@ const [messageType, setMessageType] = useState(''); // 'success' or 'error'
     }
 
     try {
-      const { data } = await axios.get('http://localhost:5000/api/results/grid-fetch', {
+      const { data } = await axios.get('https://rrerp.onrender.com/api/results/grid-fetch', {
         params: { batch, semester, examType, branch }
       });
       setSubjects(data.subjects || []);
