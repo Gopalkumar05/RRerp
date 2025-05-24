@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/attendance";
+const API_URL = "https://rrerp.onrender.com/api/attendance";
 
 export const getAttendance = async (teacherCode) => {
   try {
