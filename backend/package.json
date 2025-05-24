@@ -1,5 +1,13 @@
 {
+  "name": "backend",
+  "version": "1.0.0",
   "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "build": "npm install --prefix ../frontend && npm run build --prefix ../frontend"
+  },
   "dependencies": {
     "bcrypt": "^5.1.1",
     "bcryptjs": "^3.0.2",
