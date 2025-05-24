@@ -27,7 +27,7 @@ const SignupTeacher = () => {
     setLoading(true);
     setError("");
     try {
-      await axios.post("http://localhost:5000/api/v1/user/send-otp", {
+      await axios.post("https://rrerp.onrender.com/api/v1/user/send-otp", {
         username,
         email,
         password,
@@ -51,7 +51,7 @@ const SignupTeacher = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/v1/user/verify-otp",
+        "https://rrerp.onrender.com/api/v1/user/verify-otp",
         { email, otp }
       );
 
