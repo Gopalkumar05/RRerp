@@ -8,7 +8,7 @@ const ActivitiesPage = () => {
   useEffect(() => {
     const fetchActivities = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/activities");
+        const response = await axios.get("https://rrerp.onrender.com/api/activities");
         setActivities(response.data);
       } catch (error) {
         console.error("Error fetching activities:", error);
@@ -43,7 +43,7 @@ const ActivitiesPage = () => {
              
               {activity.file && (
                 <a
-                  href={`http://localhost:5000/uploads/${activity.file}`}
+                  href={`https://rrerp.onrender.com/uploads/${activity.file}`}
                   className="text-blue-600 hover:text-blue-800"
                   target="_blank"
                   rel="noopener noreferrer"
