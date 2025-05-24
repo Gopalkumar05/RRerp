@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 
 const examTypes = ['Sessional1', 'Sessional2', 'PUT'];
-const branches = ['CSE', 'ECE', 'ME', 'IT'];
+const branches = ['CSD' ,'AIML','CSE', 'ECE', 'ME', 'IT','CE'];
 
 export default function ResultManager() {
   const [batch, setBatch] = useState('');
