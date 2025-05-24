@@ -136,7 +136,7 @@ export const forgotPassword = async (req, res) => {
         const token = jwt.sign({ id: user._id }, process.env.your_secret_key, { expiresIn: "5h" });
         const encodedToken = encodeURIComponent(token).replace(/\./g, "%2E");
         // Send email with reset link
-        const resetUrl = `http://localhost:5173/reset-password/${token}`;
+        const resetUrl = `https://rrerp.onrender.com/reset-password/${token}`;
         const transporter = nodemailer.createTransport({
             service: "gmail",
             auth: {
