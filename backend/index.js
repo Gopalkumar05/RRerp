@@ -28,7 +28,7 @@ app.use(cookieParser());
 
 // ✅ CORS Configuration
 const corsOptions = {
-  origin: "http://localhost:5173", // Allow frontend origin
+  origin: "https://rrerp-1.onrender.com", // Allow frontend origin
   credentials: true, // Allow cookies (important for JWT authentication)
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"],
