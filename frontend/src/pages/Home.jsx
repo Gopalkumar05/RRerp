@@ -51,7 +51,7 @@ const Home = () => {
       <nav className="bg-white/80 backdrop-blur-md shadow-md py-2 px-4 flex justify-between items-center z-20 relative">
         <div
           onClick={handleHomeClick}
-          className="text-2xl font-bold text-blue-800 cursor-pointer"
+          className="text-2xl font-bold text-red-800 cursor-pointer"
         >
           R.R. Group of Institutions
         </div>
