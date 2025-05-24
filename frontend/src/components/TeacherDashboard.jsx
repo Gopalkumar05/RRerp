@@ -29,7 +29,7 @@ const TeacherDashboard = () => {
   const [studentToDelete, setStudentToDelete] = useState(null);
   
  const [students, setStudents] = useState([]);
-    const [attendance, setAttendance] = useState(Array(65).fill().map(() => Array(31).fill("")));
+    const [attendance, setAttendance] = useState(Array(50).fill().map(() => Array(31).fill("")));
     const [holidays, setHolidays] = useState([]);
     const [collegeName, setCollegeName] = useState("");
     const [branchName, setBranchName] = useState("");
