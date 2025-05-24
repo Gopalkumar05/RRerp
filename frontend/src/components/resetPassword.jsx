@@ -22,7 +22,7 @@ const ResetPassword = () => {
     }
 
     try {
-      const response = await fetch(`http://localhost:5000/api/v1/user/reset-password/${token}`, {
+      const response = await fetch(`https://rrerp.onrender.com/api/v1/user/reset-password/${token}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ password }),
